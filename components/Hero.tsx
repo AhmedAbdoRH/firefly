@@ -147,7 +147,7 @@ const Hero: React.FC = () => {
   }, []);
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center pt-20 overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center pt-20 pb-20 overflow-hidden">
       
       {/* Background Elements */}
       <div className="absolute inset-0 z-0">
@@ -175,22 +175,21 @@ const Hero: React.FC = () => {
           
           {/* Text Content Side */}
           <div className="w-full lg:w-1/2 text-center lg:text-left pt-10 lg:pt-0">
+
+
             {/* Badge */}
             <Reveal width="100%" className="flex justify-center lg:justify-start">
-              <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/5 border border-white/10 mb-8 backdrop-blur-sm hover:border-firefly-yellow/50 transition-colors duration-300 group cursor-default">
-                <Sparkles className="w-4 h-4 text-firefly-yellow animate-spin-slow group-hover:text-white transition-colors" />
-                <span className="text-sm text-gray-300 font-medium tracking-wide group-hover:text-white transition-colors">The Future of Digital Growth</span>
-              </div>
+              <div className="mb-8"></div>
             </Reveal>
 
             {/* Heading */}
             <div className="mb-8">
               <h1 className="font-heading text-5xl md:text-7xl lg:text-8xl font-bold leading-tight tracking-tight">
                 <div className="text-white block mb-2">
-                  <TextReveal text="Ignite Your" delay={300} />
+                  <TextReveal text="Where Creativity" delay={300} />
                 </div>
                 <div className="text-transparent bg-clip-text bg-gradient-to-r from-firefly-yellow via-white to-firefly-green block pb-2">
-                  <TextReveal text="Brand's Potential" delay={1000} />
+                  Meets Strategy
                 </div>
               </h1>
             </div>
@@ -198,7 +197,7 @@ const Hero: React.FC = () => {
             {/* Subheading */}
             <Reveal delay={1500} width="100%">
               <p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto lg:mx-0 mb-10 leading-relaxed">
-                We fuse creativity with data-driven strategies to build systems that generate consistent revenue. Stop chasing leads. Let them find you.
+                Firefly Marketing Agency: Innovative strategies for brand growth and visibility.
               </p>
             </Reveal>
 
@@ -221,8 +220,8 @@ const Hero: React.FC = () => {
           </div>
 
           {/* Video/Visual Side */}
-          <div className="w-full lg:w-[450px] flex justify-center relative perspective-1000">
-             <Reveal delay={1200} className="w-full max-w-[350px] lg:max-w-full relative">
+          <div className="w-full lg:w-[300px] flex justify-center relative perspective-1000">
+             <Reveal delay={1200} className="w-full max-w-[250px] lg:max-w-full relative">
                 {/* Decorative Glow */}
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-firefly-yellow/20 blur-[60px] rounded-full animate-pulse -z-10"></div>
                 
@@ -233,40 +232,19 @@ const Hero: React.FC = () => {
                   
                   <video 
                     src="Hero.mp4" 
-                    autoPlay 
-                    loop 
-                    muted 
-                    playsInline
+                  autoPlay 
+                  playsInline
                     className="w-full h-full object-cover aspect-[9/16] scale-105"
                   />
 
-                  {/* Floating UI Elements on top of video */}
-                  <div className="absolute bottom-6 left-6 right-6 z-20">
-                     <div className="bg-white/10 backdrop-blur-md border border-white/10 p-4 rounded-xl">
-                        <div className="flex items-center gap-3">
-                           <div className="w-2 h-2 rounded-full bg-red-500 animate-pulse"></div>
-                           <p className="text-xs font-bold text-white tracking-widest uppercase">Live Campaign</p>
-                        </div>
-                        <p className="text-white font-heading font-bold text-lg mt-1">+450% ROI</p>
-                     </div>
-                  </div>
+
                 </div>
              </Reveal>
           </div>
 
         </div>
 
-        {/* Trust Indicators */}
-        <Reveal delay={1900} width="100%">
-          <div className="mt-20 pt-10 border-t border-white/5">
-            <p className="text-xs text-gray-500 mb-8 uppercase tracking-[0.2em] text-center lg:text-left">Trusted by Innovative Companies</p>
-            <div className="flex flex-wrap justify-center lg:justify-start gap-8 md:gap-16 opacity-60 grayscale hover:grayscale-0 transition-all duration-700 ease-in-out">
-               {['Acme Corp', 'GlobalTech', 'Nebula', 'Vertex', 'Oasis'].map((brand, i) => (
-                 <span key={i} className="text-xl font-heading font-bold text-white hover:text-firefly-yellow transition-colors cursor-default hover:scale-110 transform duration-300 drop-shadow-md">{brand}</span>
-               ))}
-            </div>
-          </div>
-        </Reveal>
+        
       </div>
     </section>
   );

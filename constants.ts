@@ -1,12 +1,12 @@
-import { 
-  Zap, 
-  BarChart3, 
-  Globe, 
-  Cpu, 
-  Rocket, 
-  ShieldCheck,
-  Layout,
-  MessageSquare
+import {
+  BarChart3,
+  Globe,
+  MessageSquare,
+  Camera,
+  Palette,
+  Video,
+  Pencil,
+  Image
 } from "lucide-react";
 import { ServiceItem, TestimonialItem, NavLink, StatItem } from "./types";
 
@@ -19,42 +19,52 @@ export const NAV_LINKS: NavLink[] = [
 
 export const SERVICES: ServiceItem[] = [
   {
-    title: "Cold Outreach Systems",
-    description: "Automated, high-converting email and LinkedIn campaigns designed to fill your pipeline with qualified leads.",
-    icon: Zap,
-  },
-  {
-    title: "CRM Architecture",
-    description: "Custom-built CRM solutions that organize your data and streamline your sales process for maximum efficiency.",
-    icon: Layout,
-  },
-  {
-    title: "AI Sales Automation",
-    description: "Leverage cutting-edge AI agents to handle initial inquiries, qualify leads, and book meetings 24/7.",
-    icon: Cpu,
-  },
-  {
-    title: "Performance Marketing",
-    description: "Data-driven ad campaigns on Meta, Google, and LinkedIn that target your ideal customer profile with precision.",
+    title: "Marketing Strategy",
+    description: "Crafting comprehensive strategies to guide your brand's growth and market penetration.",
     icon: BarChart3,
   },
   {
-    title: "Web Development",
-    description: "Blazing fast, conversion-optimized websites built to turn visitors into loyal customers.",
+    title: "Content Creation",
+    description: "Developing engaging and relevant content across various formats to attract and retain your audience.",
+    icon: Pencil,
+  },
+  {
+    title: "Video Shooting",
+    description: "Professional video production services for commercials, promotional content, and corporate videos.",
+    icon: Video,
+  },
+  {
+    title: "Branding",
+    description: "Developing unique brand identities that resonate with your audience and stand out in the market.",
+    icon: Palette,
+  },
+  {
+    title: "Websites",
+    description: "Designing and developing modern, responsive, and user-friendly websites that drive results.",
     icon: Globe,
   },
   {
-    title: "Brand Strategy",
-    description: "Comprehensive brand positioning that differentiates you from competitors and resonates with your audience.",
-    icon: Rocket,
+    title: "Social Media Campaigns",
+    description: "Managing and optimizing your social media presence to engage your audience and build community.",
+    icon: MessageSquare,
+  },
+  {
+    title: "Posts Designs",
+    description: "Creating visually appealing and effective graphic designs for your social media posts and other digital content.",
+    icon: Image,
+  },
+  {
+    title: "Photo Shooting",
+    description: "High-quality professional photography services for products, events, and corporate profiles.",
+    icon: Camera,
   },
 ];
 
 export const STATS: StatItem[] = [
-  { label: "Revenue Generated", value: "$50M+" },
-  { label: "Leads Qualified", value: "120k+" },
-  { label: "Client Satisfaction", value: "98%" },
-  { label: "Campaigns Launched", value: "500+" },
+  { label: "Revenue Generated", value: "$500k+" },
+  { label: "Leads Qualified", value: "5k+" },
+  { label: "Client Satisfaction", value: "99%" },
+  { label: "Campaigns Launched", value: "50+" },
 ];
 
 export const TESTIMONIALS: TestimonialItem[] = [
